@@ -1,7 +1,7 @@
 # 💬 Chat en Tiempo Real con Sockets
 
-**👨‍🎓 Estudiante:** _Tu Nombre Aquí_  
-**📅 Fecha de entrega:** _DD/MM/AAAA_
+**👨‍🎓 Estudiante:** _Ordoñez Cabrera Kevin Lenin_  
+**📅 Fecha de entrega:** _30/05/2025_
 
 ---
 
@@ -26,52 +26,54 @@ Clona el repositorio y crea tu propia rama de trabajo:
 
 ```bash
 git clone https://github.com/paulosk8/webChat.git
-cd webChat
-git checkout -b mi-implementacion
 
-🛠️ Implementación del Proyecto
-🧱 Estructura General
-index.js: Servidor principal con configuración de Express y Socket.IO.
 
-realTimeServer.js: Manejador de eventos de socket.
+## 🛠️ Implementación del Proyecto
 
-routes/index.js: Rutas del frontend (chat y registro).
+### 🧱 Estructura General
 
-public/js/register.js: Captura el nombre del usuario desde un formulario.
+- `index.js`: Servidor principal con configuración de Express y Socket.IO.
+- `realTimeServer.js`: Manejador de eventos de socket.
+- `routes/index.js`: Rutas del frontend (chat y registro).
+- `public/js/register.js`: Captura el nombre del usuario desde un formulario.
+- `public/js/script.js`: Lógica del cliente para enviar y recibir mensajes.
+- `middlewares/isLoggedIn.js`: Middleware para validar sesiones mediante cookies.
 
-public/js/script.js: Lógica del cliente para enviar y recibir mensajes.
+![Estructura General](https://i.imgur.com/JqEszKI.png)
 
-middlewares/isLoggedIn.js: Middleware para validar sesiones mediante cookies.
+---
 
-🎨 Mejoras de Diseño
-Estilo tipo WhatsApp para diferenciar mensajes enviados y recibidos.
+### 🎨 Mejoras de Diseño
 
-Diseño moderno y responsive con CSS.
+- Estilo tipo WhatsApp para diferenciar mensajes enviados y recibidos.
+- Diseño moderno y responsive con CSS.
+- El input del mensaje se limpia automáticamente después de enviarlo.
+- Se muestra la hora del mensaje y el nombre del usuario.
 
-El input del mensaje se limpia automáticamente después de enviarlo.
+![Mejoras de Diseño](https://i.imgur.com/FEL1v4a.png)
 
-Se muestra la hora del mensaje y el nombre del usuario.
+---
 
-✨ Funcionalidades Adicionales (Opcionales)
-Identificación del usuario mediante cookie (username).
+### ✨ Funcionalidades Adicionales (Opcionales)
 
-Alineación de mensajes: izquierda (otros usuarios) y derecha (usuario actual).
+- Identificación del usuario mediante cookie (`username`).
+- Alineación de mensajes: izquierda (otros usuarios) y derecha (usuario actual).
 
-Colores personalizados según el remitente del mensaje.
+![Funcionalidad 1](https://i.imgur.com/W1iy3YT.png)  
+![Funcionalidad 2](https://i.imgur.com/hYd2kyM.png)
+
+- Colores personalizados según el remitente del mensaje.
+
+![Colores personalizados](https://i.imgur.com/TdsGEjH.png)
+
 
 ▶️ Instrucciones de Ejecución
 Clona el repositorio:
 
-bash
-Copiar
-Editar
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/KevinTitanZ/Chat-utilizando-Sockets.git
 cd tu-repositorio
 Inicia el servidor:
 
-bash
-Copiar
-Editar
 node index.js
 Abre el navegador en:
 
@@ -103,10 +105,3 @@ Aplicación de estilos condicionales según el remitente.
 Limpieza automática del campo de entrada sin recargar la página.
 
 📚 Referencias
-🔗 Socket.IO – Documentación oficial
-
-🔗 MDN Web Docs – Cookies en JavaScript
-
-🔗 CSS-Tricks – Guía de Flexbox
-
-🔗 Inspiración de UI estilo WhatsApp – Dribbble
