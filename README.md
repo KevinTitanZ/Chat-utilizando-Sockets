@@ -1,16 +1,16 @@
 # 💬 Chat en Tiempo Real con Sockets
 
-**👨‍🎓 Nombre del estudiante:** _Tu Nombre Aquí_  
+**👨‍🎓 Estudiante:** _Tu Nombre Aquí_  
 **📅 Fecha de entrega:** _DD/MM/AAAA_
 
 ---
 
 ## 📘 Introducción
 
-Este proyecto consiste en la implementación de un **chat en tiempo real** utilizando `Node.js`, `Express` y `Socket.IO`.  
+Este proyecto consiste en la creación de un **chat en tiempo real** utilizando `Node.js`, `Express` y `Socket.IO`.  
 Su propósito es permitir la comunicación instantánea entre múltiples usuarios conectados a un mismo servidor.
 
-El uso de **sockets** permite mantener una conexión abierta entre cliente y servidor, esencial para aplicaciones como chats, juegos multijugador, sistemas de notificación, etc.
+Gracias a los **sockets**, se mantiene una conexión abierta entre el cliente y el servidor, lo cual es esencial para aplicaciones como chats, juegos multijugador, sistemas de notificación, entre otros.
 
 ---
 
@@ -19,56 +19,54 @@ El uso de **sockets** permite mantener una conexión abierta entre cliente y ser
 Repositorio original proporcionado por el docente:  
 🔗 [https://github.com/paulosk8/webChat/tree/main](https://github.com/paulosk8/webChat/tree/main)
 
-- **Rama principal:** Código inicial del proyecto.
-- **Rama implementacion-chat:** Versión final como referencia.
+- **Rama principal:** Código base del proyecto.  
+- **Rama `implementacion-chat`:** Versión final de referencia.
 
-Clonación del repositorio y creación de una nueva rama:
+Clona el repositorio y crea tu propia rama de trabajo:
 
 ```bash
 git clone https://github.com/paulosk8/webChat.git
 cd webChat
 git checkout -b mi-implementacion
 
+🛠️ Implementación del Proyecto
+🧱 Estructura General
+index.js: Servidor principal con configuración de Express y Socket.IO.
 
-## 🛠️ Implementación del Proyecto
+realTimeServer.js: Manejador de eventos de socket.
 
-### 🧱 Estructura General
+routes/index.js: Rutas del frontend (chat y registro).
 
-- `index.js`: Servidor principal con configuración de Express y Socket.IO.
-- `realTimeServer.js`: Manejador de eventos de socket.
-- `routes/index.js`: Rutas del frontend (chat y registro).
-- `public/js/register.js`: Captura el nombre del usuario desde un formulario.
-- `public/js/script.js`: Lógica del cliente para enviar y recibir mensajes.
-- `middlewares/isLoggedIn.js`: Middleware para validación de sesión por cookies.
+public/js/register.js: Captura el nombre del usuario desde un formulario.
 
----
+public/js/script.js: Lógica del cliente para enviar y recibir mensajes.
 
-### 🎨 Mejoras al Diseño
+middlewares/isLoggedIn.js: Middleware para validar sesiones mediante cookies.
 
-- Estilo tipo **WhatsApp** para diferenciar mensajes enviados y recibidos.
-- Estilos **responsivos y modernos** con CSS.
-- El **input del mensaje se limpia automáticamente** después de enviarlo.
-- Se muestra la **hora del mensaje** y el **nombre del usuario**.
+🎨 Mejoras de Diseño
+Estilo tipo WhatsApp para diferenciar mensajes enviados y recibidos.
 
----
+Diseño moderno y responsive con CSS.
 
-### ✨ Características Adicionales (Opcionales)
+El input del mensaje se limpia automáticamente después de enviarlo.
 
-- Identificación del usuario mediante cookie (`username`).
-- Alineación de mensajes tipo WhatsApp (izquierda/derecha).
-- Colores distintos para mensajes propios y de otros usuarios.
+Se muestra la hora del mensaje y el nombre del usuario.
 
----
+✨ Funcionalidades Adicionales (Opcionales)
+Identificación del usuario mediante cookie (username).
 
-## ▶️ Instrucciones de Ejecución
+Alineación de mensajes: izquierda (otros usuarios) y derecha (usuario actual).
 
-1. **Clona el repositorio:**
+Colores personalizados según el remitente del mensaje.
 
-```bash
+▶️ Instrucciones de Ejecución
+Clona el repositorio:
+
+bash
+Copiar
+Editar
 git clone https://github.com/tu-usuario/tu-repositorio.git
 cd tu-repositorio
-
-
 Inicia el servidor:
 
 bash
@@ -76,45 +74,39 @@ Copiar
 Editar
 node index.js
 Abre el navegador en:
+
 📍 http://localhost:3000
 
+🖼️ Capturas de Pantalla
+🧩 Interfaz del Chat
 
-## 🖼️ Capturas de Pantalla
 
-📸 A continuación, se muestran algunas capturas del funcionamiento del chat:
+💬 Mensajes estilo WhatsApp
 
-### 🧩 Interfaz del Chat
 
-![Interfaz del chat](./screenshots/interfaz-chat.png)
-
-### 💬 Mensajes tipo WhatsApp (enviados y recibidos)
-
-![Mensajes WhatsApp style](./screenshots/mensajes-whatsapp.png)
-
----
-
-## 🧠 Conclusiones
-
+🧠 Conclusiones
 Durante el desarrollo de este proyecto aprendí a:
 
-- Implementar un servidor de sockets con **Socket.IO**.
-- Crear una interfaz en tiempo real funcional y moderna.
-- Aplicar conceptos de **cookies**, **middleware** y **rutas en Express**.
-- Diseñar una UI responsive al estilo **WhatsApp** para mejorar la experiencia de usuario.
+Implementar un servidor de sockets utilizando Socket.IO.
 
----
+Crear una interfaz de chat moderna y funcional en tiempo real.
 
-## 😅 Dificultades encontradas
+Usar cookies, middleware y gestionar rutas con Express.
 
-- Controlar el flujo de **cookies** para identificar quién envía cada mensaje.
-- Aplicar **estilos condicionales** según el remitente del mensaje.
-- Limpiar el input del mensaje automáticamente **sin recargar la página**.
+Diseñar una experiencia de usuario inspirada en la interfaz de WhatsApp.
 
----
+😅 Dificultades Encontradas
+Gestión del flujo de cookies para identificar a cada usuario.
 
-## 📚 Referencias
+Aplicación de estilos condicionales según el remitente.
 
-- 🔗 [Socket.IO - Official Documentation](https://socket.io/docs/v4/)
-- 🔗 [MDN Web Docs - Working with Cookies](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie)
-- 🔗 [CSS Tricks - Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- 🔗 [WhatsApp UI Inspiration - Dribbble](https://dribbble.com/search/whatsapp)
+Limpieza automática del campo de entrada sin recargar la página.
+
+📚 Referencias
+🔗 Socket.IO – Documentación oficial
+
+🔗 MDN Web Docs – Cookies en JavaScript
+
+🔗 CSS-Tricks – Guía de Flexbox
+
+🔗 Inspiración de UI estilo WhatsApp – Dribbble
