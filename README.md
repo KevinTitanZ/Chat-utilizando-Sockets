@@ -51,7 +51,7 @@ git clone https://github.com/paulosk8/webChat.git
 - Se muestra la hora del mensaje y el nombre del usuario.
 
 
-![Mejoras de Diseño 2](https://i.imgur.com/5enUUso.png)
+![Mejoras de Diseño 2](https://i.imgur.com/hvkYIQC.png)
 
 ---
 
@@ -60,12 +60,12 @@ git clone https://github.com/paulosk8/webChat.git
 - Identificación del usuario mediante cookie (`username`).
 - Alineación de mensajes: izquierda (otros usuarios) y derecha (usuario actual).
 
-![Funcionalidad 1](https://i.imgur.com/W1iy3YT.png)  
-![Funcionalidad 2](https://i.imgur.com/hYd2kyM.png)
+![Funcionalidad 1](https://i.imgur.com/GQSftTY.png)  
+![Funcionalidad 2](https://i.imgur.com/XtpHffQ.png)
 
 - Colores personalizados según el remitente del mensaje.
 
-![Colores personalizados](https://i.imgur.com/TdsGEjH.png)
+![Colores personalizados](https://i.imgur.com/LJd1Wqv.png)
 
 
 ▶️ Instrucciones de Ejecución
@@ -82,10 +82,10 @@ npm start
 
 🖼️ Capturas de Pantalla
 - Registro de Usuario:
-![Mejoras de Diseño 3](https://i.imgur.com/5enUUso.png)
+![Mejoras de Diseño 3](https://i.imgur.com/hvkYIQC.png)
 
 - Interfaz del Chat:
-![Diseño 3](https://i.imgur.com/DnN3oru.png)
+![Diseño 3](https://i.imgur.com/QZE2MXO.png)
 
 - Mensajes estilo WhatsApp:
 ![Diseño 4](https://i.imgur.com/kn3HjD7.png)
