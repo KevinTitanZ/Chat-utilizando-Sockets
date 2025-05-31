@@ -1,7 +1,7 @@
-# 💬 Chat en Tiempo Real con Sockets
+#  Chat en Tiempo Real con Sockets
 
-**👨‍🎓 Estudiante:** _Ordoñez Cabrera Kevin Lenin_  
-**📅 Fecha de entrega:** _30/05/2025_
+**Estudiante:** _Ordoñez Cabrera Kevin Lenin_  
+**Fecha de entrega:** _30/05/2025_
 
 ---
 
@@ -24,7 +24,7 @@ Repositorio original proporcionado por el docente:
 
 Clona el repositorio y crea tu propia rama de trabajo:
 
-```bash
+
 git clone https://github.com/paulosk8/webChat.git
 
 
@@ -39,7 +39,7 @@ git clone https://github.com/paulosk8/webChat.git
 - `public/js/script.js`: Lógica del cliente para enviar y recibir mensajes.
 - `middlewares/isLoggedIn.js`: Middleware para validar sesiones mediante cookies.
 
-![Estructura General](https://i.imgur.com/JqEszKI.png)
+![Estructura General](https://imgur.com/JqEszKI.png)
 
 ---
 
@@ -50,7 +50,8 @@ git clone https://github.com/paulosk8/webChat.git
 - El input del mensaje se limpia automáticamente después de enviarlo.
 - Se muestra la hora del mensaje y el nombre del usuario.
 
-![Mejoras de Diseño](https://i.imgur.com/FEL1v4a.png)
+
+![Mejoras de Diseño 2](https://i.imgur.com/5enUUso.png)
 
 ---
 
@@ -70,23 +71,29 @@ git clone https://github.com/paulosk8/webChat.git
 ▶️ Instrucciones de Ejecución
 Clona el repositorio:
 
-git clone https://github.com/KevinTitanZ/Chat-utilizando-Sockets.git
-cd tu-repositorio
-Inicia el servidor:
+- git clone https://github.com/KevinTitanZ/Chat-utilizando-Sockets.git
+- cd webChat-implementacion-chat
+- Inicia el servidor:
+npm start
 
-node index.js
-Abre el navegador en:
+- Abre el navegador en:
 
 📍 http://localhost:3000
 
 🖼️ Capturas de Pantalla
-🧩 Interfaz del Chat
+- Registro de Usuario:
+![Mejoras de Diseño 3](https://i.imgur.com/5enUUso.png)
+
+- Interfaz del Chat:
+![Diseño 3](https://i.imgur.com/DnN3oru.png)
+
+- Mensajes estilo WhatsApp:
+![Diseño 4](https://i.imgur.com/kn3HjD7.png)
+
+---
+**Conclusiones**
 
 
-💬 Mensajes estilo WhatsApp
-
-
-🧠 Conclusiones
 Durante el desarrollo de este proyecto aprendí a:
 
 Implementar un servidor de sockets utilizando Socket.IO.
@@ -97,11 +104,19 @@ Usar cookies, middleware y gestionar rutas con Express.
 
 Diseñar una experiencia de usuario inspirada en la interfaz de WhatsApp.
 
-😅 Dificultades Encontradas
+**Dificultades Encontradas**
+
+
 Gestión del flujo de cookies para identificar a cada usuario.
 
 Aplicación de estilos condicionales según el remitente.
 
 Limpieza automática del campo de entrada sin recargar la página.
 
-📚 Referencias
+**Referencias**
+
+
+https://github.com/paulosk8/webChat/tree/main
+
+
+https://github.com/KevinTitanZ/Chat-utilizando-Sockets
