@@ -37,6 +37,19 @@ socket.on("message", ({ user, message }) => {
 
   allMessages.append(msg);
 });
+
+socket.on("users", (users) => {
+  console.log("Usuarios conectados:", users); // <-- Agrega esto
+  const userList = document.querySelector("#connected-users");
+  if (userList) {
+    userList.innerHTML = users
+      .map((u) => `<li><span>🟢</span> ${u}</li>`)
+      .join("");
+  }
+});
+
+
+
 function getCookie(name) {
   const value = `; ${document.cookie}`;
   const parts = value.split(`; ${name}=`);
@@ -49,7 +62,7 @@ function setCookie(name, value, days) {
 }
 function deleteCookie(name) {
   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
-}
+}setCookie("username", nombre, 1);
 function checkCookie() {
   const username = getCookie("username");
   if (!username) {

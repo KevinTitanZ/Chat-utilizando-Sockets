@@ -179,4 +179,34 @@ input:focus {
     border-radius: 8px;
 }
 
+#user-panel {
+  height: 100%;
+  min-height: 400px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#connected-users li {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#connected-users li:hover {
+  background-color: #e9ecef;
+}
+
+#connected-users li span {
+  color: green;
+  font-size: 1rem;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
